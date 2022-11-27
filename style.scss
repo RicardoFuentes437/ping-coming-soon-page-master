@@ -16,13 +16,14 @@ html, body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
         font-family: 'Libre Franklin';
         padding-top: 30px;
         font-size: 20px;
 
         .logo{
             width: 70px;
+            padding-bottom: 30px;
         }
 
         .illustration{
@@ -32,11 +33,16 @@ html, body{
         .announcement{
             color: $Gray;
             font-weight: 300;
+            font-size: 36px;
 
             .emphasis{
                 color: $Very-Dark-Blue;
                 font-weight: 700;
             }
+        }
+
+        .subscribe{
+            font-size: 17px;
         }
 
         .sub-form{
@@ -52,7 +58,8 @@ html, body{
 
                 &::placeholder{
                     color: $Gray;
-                    padding-left: 10px;
+                    padding-left: 20px;
+                    font-size: 15px;
                 }
             }
 
@@ -68,12 +75,97 @@ html, body{
             }
         }
 
+        .error-message{
+            opacity: 0;
+            color: $Light-Red;
+            font-size: 14px;
+            position: relative;
+            left: -160px;
+        }
+
         .icons{
             color: $Blue;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            padding: 20px;
+
+            .facebook{
+                position:relative;
+                cursor: pointer;
+
+                .fa-square-facebook{
+                    visibility: hidden;
+                    position: absolute;
+                }
+
+                .fa-facebook-f{
+                    position: absolute;
+                }
+
+                &:hover{
+                    .fa-square-facebook{
+                        visibility: visible;
+                    }
+
+                    .fa-facebook-f{
+                        visibility: hidden;
+                    }
+                }
+            }
+
+            .twitter{
+                position: relative;
+                cursor: pointer;
+
+                .fa-square-twitter{
+                    visibility: hidden;
+                    position: absolute;
+                }
+
+                .fa-twitter{
+                    position: absolute;
+                }
+
+                &:hover{
+                    .fa-square-twitter{
+                        visibility: visible;
+                    }
+
+                    .fa-twitter{
+                        visibility: hidden;
+                    }
+                }
+            }
+
+            .instagram{
+                position: relative;
+                cursor: pointer;
+
+                .fa-square-instagram{
+                    visibility: hidden;
+                    position: absolute;
+                }
+
+                .fa-instagram{
+                    position: absolute;
+                }
+
+                &:hover{
+                    .fa-square-instagram{
+                        visibility: visible;
+                    }
+
+                    .fa-instagram{
+                        visibility: hidden;
+                    }
+                }
+            }
         }
 
         .copyright{
             font-size: 12px;
+            color: $Gray;
         }
     }
 }
