@@ -8,6 +8,13 @@ subForm.addEventListener('submit', function(event){
     event.stopPropagation();
     if((input.value == '' || regex.test(input.value) == false)){
         input.style.border = "1px solid hsl(354, 100%, 66%)";
+        
+        if(input.value == ''){
+            errorMessage.innerHTML = 'Whoops! It looks like you forgot to add your email';
+        }else{
+            errorMessage.innerHTML = 'Please provide a valid email address';
+        }
+
         if(window.innerWidth < 650){
             var button = document.querySelector('.notify-button');
             button.style.marginTop = '40px';
