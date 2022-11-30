@@ -198,5 +198,29 @@ html, body{
                 }
             }
         }
+
+        @media (max-width: 450px) {
+            .announcement{
+                font-size: 26px;
+            }
+
+            .illustration{
+                width: 310px;
+            }
+
+            .sub-form{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+
+                input{
+                    width: 90%;
+                }
+
+                button{
+                    width: 90%;
+                }
+            }
+        }
     }
 }

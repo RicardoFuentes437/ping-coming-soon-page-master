@@ -160,4 +160,23 @@ html main .copyright, body main .copyright {
   html main .sub-form button, body main .sub-form button {
     width: 90%;
   }
+}
+@media (max-width: 450px) {
+  html main .announcement, body main .announcement {
+    font-size: 26px;
+  }
+  html main .illustration, body main .illustration {
+    width: 310px;
+  }
+  html main .sub-form, body main .sub-form {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  html main .sub-form input, body main .sub-form input {
+    width: 90%;
+  }
+  html main .sub-form button, body main .sub-form button {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
